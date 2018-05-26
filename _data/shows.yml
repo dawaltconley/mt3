@@ -85,3 +85,19 @@
   postal: "11237"
   links:
     facebook: "https://www.facebook.com/events/1777444552323023"
+- date:   2018-06-07 20:00:00 -0500
+  venue:  "Tender Trap"
+  street: "66 Greenpoint Ave"
+  city:   "Brooklyn"
+  state:  "NY"
+  postal: "11222"
+  links:
+    location: "https://goo.gl/maps/tzZHTQ9QHKv"
+- date:   2018-06-17 12:00:00 -0500
+  venue:  "Twin Star Orchards"
+  street: "155 N Ohioville Rd"
+  city:   "New Paltz"
+  state:  "NY"
+  postal: "12561"
+  links:
+    location: "https://www.google.com/maps/place/Twin+Star+Orchards/@41.7571012,-74.0528673,17z/data=!3m1!4b1!4m5!3m4!1s0x89dd1813590f9a55:0xfca8cb5a358db205!8m2!3d41.7570972!4d-74.0506786"
