@@ -27,7 +27,8 @@ $perspective:           2000px;
 // Colors
 
 $brand-color:           gray;
-$shadow-color:          rgba(0, 0, 0, 0.2);
+$text-shadow:           1px 1px 4px rgba(0, 0, 0, 0.2);
+$full-shadow:           0 0 0.24em black;
 
 $fa-icons:              ({% for icon in site.data.icon-types %}
                             {{ icon.type }}: {{ icon.color }},{% endfor %}

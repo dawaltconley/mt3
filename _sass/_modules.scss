@@ -69,11 +69,11 @@
 }
 
 .shadow {
-    text-shadow: 1px 1px 4px $shadow-color;
+    text-shadow: $text-shadow;
 }
 
 .full-shadow {
-    text-shadow: 0 0 0.24em black;
+    text-shadow: $full-shadow;
 }
 
 .avenir-hand {
