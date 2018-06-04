@@ -148,7 +148,8 @@ itemtype: "http://schema.org/MusicGroup"
                 </span>
               </span>
               <span class="show-links text-right media-icon-basic media-icon-bloat">
-                {% include all-media-icons.liquid icon_set=show.links style="square" %}
+                {% capture show_analytics_label %}Clicked on link for {{ show.date | date: "%-m-%d-%y" }} show at {{ show.venue }}.{% endcapture %}
+                {% include all-media-icons.liquid icon_set=show.links style="square" analytics=show_analytics_label %}
               </span>
             </li>
           {% endif %}
