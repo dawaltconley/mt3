@@ -160,10 +160,10 @@
  * Analytics
  */
 
-    iFrameAnalyticsObjects = [];
+    analyticsObjects = [];
 
-    toArray(document.querySelectorAll('iframe[data-analytics-category][data-analytics-action="click"][data-analytics-label]')).forEach(function (element) {
-        iFrameAnalyticsObjects.push(new AnalyticsEventObj(element));
+    toArray(document.querySelectorAll("[data-analytics-category][data-analytics-action][data-analytics-label]")).forEach(function (element) {
+        analyticsObjects.push(new AnalyticsEventObj(element));
     });
 
     function AnalyticsEventObj(element) {
@@ -172,17 +172,39 @@
         this.action = element.getAttribute("data-analytics-action");
         this.label = element.getAttribute("data-analytics-label");
         this.firstInteraction = true;
-    }
+        this.isIFrame = false;
+    };
 
-    function checkForClickEvent(element) {
-        for (var i=0; i < iFrameAnalyticsObjects.length; i++) {
-            obj = iFrameAnalyticsObjects[i];
-            if (element === obj.element && obj.firstInteraction) {
-                ga("send", "event", obj.category, obj.action, obj.label);
-                obj.firstInteraction = false;
-            }
+    AnalyticsEventObj.prototype.send = function () {
+        ga("send", "event", this.category, this.action, this.label);
+        this.firstInteraction = false;
+    };
+
+    AnalyticsEventObj.prototype.addListener = function () {
+        if (this.element instanceof HTMLIFrameElement && this.action == "click") {
+            window.addEventListener("blur", iFrameClickEventListener, passive);
+            this.isIFrame = true;
+        } else if (this.action == "click") {
+            this.element.addEventListener("click", this.send.bind(this), passive);
         }
-    }
+    };
+
+    function iFrameClickEventListener() {
+        window.setTimeout(function () {
+            element = document.activeElement;
+            for (var i=0; i < analyticsObjects.length; i++) {
+                obj = analyticsObjects[i];
+                if (element === obj.element && obj.isIFrame && obj.firstInteraction) {
+                    obj.send();
+                    break;
+                }
+            }
+            element.addEventListener("mouseout", function refocus() {
+                window.focus();
+                this.removeEventListener("mouseout", refocus, passive);
+            }, passive);
+        }, 0);
+    };
 
 /*
  * Event Listeners
@@ -240,19 +262,6 @@
         }, passive);
     }
 
-    function addIFrameListers() {
-        window.addEventListener("blur",function () {
-            window.setTimeout(function () {
-                element = document.activeElement;
-                checkForClickEvent(document.activeElement);
-                element.addEventListener("mouseout", function refocus() {
-                    window.focus();
-                    this.removeEventListener("mouseout", refocus, passive);
-                }, passive);
-            }, 0);
-        }, passive);
-    }
-
     function addRobResizeListener() {
         window.addEventListener("resize", function () {
             robResize();
@@ -276,8 +285,10 @@
         addHideOnScrollListener();
     }
 
-    if (iFrameAnalyticsObjects.length > 0 && jekyllEnv == "gulp") {
-        addIFrameListers();
+    if (analyticsObjects.length > 0 && jekyllEnv == "gulp") {
+        analyticsObjects.forEach(function (object) {
+            object.addListener()
+        });
     }
 
     if (rob && robContainer) {
