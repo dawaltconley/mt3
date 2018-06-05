@@ -38,7 +38,7 @@ itemtype: "http://schema.org/MusicGroup"
       {% include all-media-icons.liquid icon_set=site.contact style="o play" list="true" microdata=true %}
     </ul>
 
-    <a href="#temper-tantrum" class="fa fa-chevron-down subtle-icon scroll-arrow" data-smooth-scroll data-hide-on-scroll></a>
+    <a href="#temper-tantrum" class="fa fa-chevron-down subtle-icon scroll-arrow" data-smooth-scroll data-hide-on-scroll data-analytics-category="Navigation" data-analytics-action="click" data-analytics-label="Used scroll arrow"></a>
 
   </div>
 
@@ -57,7 +57,7 @@ itemtype: "http://schema.org/MusicGroup"
     </h2>
   </div>
 
-  <div class="relative fixed-bg overflow-h" data-rob-container>
+  <div class="relative fixed-bg overflow-h" data-rob-container data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Viewed Temper Tantrum">
 
     {% capture cover_art %}
       <img id="rob-2" class="absolute person-height container-84-height-min bottom left-quarter translate-left-65 mq-rob-2" src="{{ site.baseurl }}/assets/gulp-images/bucket-off.png" alt="">
@@ -121,7 +121,7 @@ itemtype: "http://schema.org/MusicGroup"
 
 {% if has_future %}
 
-  <div class="light screen-height-min flex-col">
+  <div class="light screen-height-min flex-col" data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Viewed upcoming shows">
 
     <div class="shows-wrapper padding-m-h padding-l-t half-height-min fill-flex-parent flex-col flex-justify-center">
 
