@@ -15,6 +15,7 @@
 
     jekyllEnv = "{{ jekyll.environment }}";
     hasGoogleAnalytics = "{{ site.google_analytics }}";
+
 /*
  * General-purpose functions
  */
@@ -129,20 +130,20 @@
     function ObjectFit(element) {
         this.container = element;
         this.img = getChildBySelector(element, "img", 1);
-    }
+    };
 
     ObjectFit.prototype.fallback = function () {
         if (this.img) {
             this.container.style.backgroundImage = "url(" + this.img.src + ")";
             this.img.parentNode.removeChild(this.img);
         }
-    }
+    };
 
     function objectFitFallback() {
         objectFitElements.forEach(function (object) {
             object.fallback();
         });
-    }
+    };
 
 /*
  * Rob Resize
@@ -268,7 +269,7 @@
                 });
             }
         }, passive);
-    }
+    };
 
     function addRobResizeListener() {
         window.addEventListener("resize", function () {
@@ -295,7 +296,7 @@
 
     if (analyticsObjects.length > 0 && hasGoogleAnalytics && jekyllEnv == "gulp") {
         analyticsObjects.forEach(function (object) {
-            object.addListener()
+            object.addListener();
         });
     }
 
