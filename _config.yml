@@ -29,6 +29,7 @@ temper_tantrum:
 permalink: /:title/
 timezone: America/New_York
 emptyArray: []
+auto_scroll: false
 bg_testing: false
 
 person_height: 84
