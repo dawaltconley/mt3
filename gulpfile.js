@@ -19,16 +19,16 @@ function jekyllBuild(env = "development") {
 }
 
 var netlifyEnvVars = {
-    REPOSITORY_URL : process.env.REPOSITORY_URL
-    BRANCH : process.env.BRANCH
-    PULL_REQUEST : process.env.PULL_REQUEST
-    HEAD : process.env.HEAD
-    COMMIT_REF : process.env.COMMIT_REF
-    CONTEXT : process.env.CONTEXT
-    REVIEW_ID : process.env.REVIEW_ID
-    URL : process.env.URL
-    DEPLOY_URL : process.env.DEPLOY_URL
-    DEPLOY_PRIME_URL : process.env.DEPLOY_PRIME_URL
+    REPOSITORY_URL : process.env.REPOSITORY_URL,
+    BRANCH : process.env.BRANCH,
+    PULL_REQUEST : process.env.PULL_REQUEST,
+    HEAD : process.env.HEAD,
+    COMMIT_REF : process.env.COMMIT_REF,
+    CONTEXT : process.env.CONTEXT,
+    REVIEW_ID : process.env.REVIEW_ID,
+    URL : process.env.URL,
+    DEPLOY_URL : process.env.DEPLOY_URL,
+    DEPLOY_PRIME_URL : process.env.DEPLOY_PRIME_URL,
 }
 
 gulp.task("env", function () {
