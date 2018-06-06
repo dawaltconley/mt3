@@ -18,6 +18,26 @@ function jekyllBuild(env = "development") {
     child.execSync(cmd, { stdio: "inherit" });
 }
 
+var netlifyEnvVars = {
+    REPOSITORY_URL : process.env.REPOSITORY_URL
+    BRANCH : process.env.BRANCH
+    PULL_REQUEST : process.env.PULL_REQUEST
+    HEAD : process.env.HEAD
+    COMMIT_REF : process.env.COMMIT_REF
+    CONTEXT : process.env.CONTEXT
+    REVIEW_ID : process.env.REVIEW_ID
+    URL : process.env.URL
+    DEPLOY_URL : process.env.DEPLOY_URL
+    DEPLOY_PRIME_URL : process.env.DEPLOY_PRIME_URL
+}
+
+gulp.task("env", function () {
+    for (varName in netlifyEnvVars) {
+        console.log(varName, "=", netlifyEnvVars[varName]);
+    }
+});
+        
+
 gulp.task("build", jekyllBuild.bind(null, "gulp"));
 
 gulp.task("css", ["build"], function (cb) {
@@ -135,4 +155,4 @@ gulp.task("bg-images", ["image-min"], function () {
 
 gulp.task("responsive-images", ["images", "srcset-images", "bg-images"]);
 
-gulp.task("default", ["build", "css", "js", "clean-js", "image-min", "responsive-images"]);
+gulp.task("default", ["env", "build", "css", "js", "clean-js", "image-min", "responsive-images"]);
