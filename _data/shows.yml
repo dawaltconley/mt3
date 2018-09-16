@@ -109,3 +109,19 @@
   postal: "10002"
   links:
     facebook: "https://www.facebook.com/events/2078639385737561/"
+- date:   2018-10-20 14:00:00 -0500
+  venue:  "Gold Sounds"
+  street: "44 Wilson Ave"
+  city:   "Brooklyn"
+  state:  "NY"
+  postal: "11237"
+  links:
+    facebook: "https://www.facebook.com/events/694680957564778/"
+- date:   2018-11-01 18:30:00 -0500
+  venue:  "Pianos"
+  street: "158 Ludlow St"
+  city:   "New York"
+  state:  "NY"
+  postal: "10002"
+  links:
+    website: "https://www.pianosnyc.com/event/1764684/"
