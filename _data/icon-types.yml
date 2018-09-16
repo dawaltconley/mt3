@@ -9,6 +9,11 @@
 - type: location
   color: '#208000'
   fa-default: 'fas fa-map-marker-alt'
+- type: website
+  # color: '#a82409'
+  color: '#bf4405'
+  fa-default: 'fas fa-external-link-alt'
+  fa-square: 'fas fa-external-link-square-alt'
 - type: google-plus
   color: '#dd4b39'
   fa-default: 'fab fa-google-plus'
