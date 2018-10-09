@@ -61,6 +61,8 @@ image_bp:
 # Build settings
 
 markdown: kramdown
+include:
+  - "_headers"
 exclude:
   - "README.md"
   - "Gemfile"
