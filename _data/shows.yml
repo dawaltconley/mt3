@@ -125,3 +125,11 @@
   postal: "10002"
   links:
     website: "https://www.pianosnyc.com/event/1764684/"
+- date:   2018-12-05 19:30:00 -0500
+  venue:  "Sunnyvale"
+  street: "1031 Grand St"
+  city:   "Brooklyn"
+  state:  "NY"
+  postal: "11211"
+  links:
+    facebook: "https://www.facebook.com/events/2066294063427363/"
