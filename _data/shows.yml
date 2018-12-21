@@ -133,3 +133,43 @@
   postal: "11211"
   links:
     facebook: "https://www.facebook.com/events/2066294063427363/"
+- date:   2019-01-17 20:00:00 -0500
+  venue:  "Great Scott"
+  street: "1222 Commonwealth Ave"
+  city:   "Allston"
+  state:  "MA"
+  postal: "02134"
+  links:
+    facebook: "https://www.facebook.com/events/658692171170296/"
+- date:   2019-01-18 20:00:00 -0500
+  venue:  "UnchARTed"
+  street: "103 Market St"
+  city:   "Lowell"
+  state:  "MA"
+  postal: "01852"
+  links:
+    location: "https://goo.gl/maps/JPRd3LJCeqQ2"
+- date:   2019-01-19 20:00:00 -0500
+  venue:  "Geno's Rock Club"
+  street: "625 Congress St"
+  city:   "Portland"
+  state:  "ME"
+  postal: "04101"
+  links:
+    website: "https://www.eventbrite.com/e/more-tongues-than-teeth-yeahman-max-hansen-tickets-53843458233"
+- date:   2019-01-20 20:00:00 -0500
+  venue:  "MAC650"
+  street: "650 Main St"
+  city:   "Middletown"
+  state:  "CT"
+  postal: "06457"
+  links:
+    location: "https://goo.gl/maps/bYT8Hp2Q61S2"
+- date:   2019-01-21 20:00:00 -0500
+  venue:  "Our Wicked Lady"
+  street: "153 Morgan Ave"
+  city:   "Brooklyn"
+  state:  "NY"
+  postal: "11237"
+  links:
+    facebook: "https://www.facebook.com/events/330626037433108/"
