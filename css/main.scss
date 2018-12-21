@@ -41,6 +41,7 @@ $fa-icons:              ({% for icon in site.data.icon-types %}
 // Images
 
 $splash-image:          url({{ site.baseurl | append: '/assets/gulp-backgrounds/bucket-background.jpg' }});
+$tour-background:       url({{ site.baseurl | append: '/assets/gulp-backgrounds/icy-leaves.jpg' }});
 
 $device-dp:             ({% if jekyll.environment == 'production' or jekyll.environment == 'gulp' %}
                             {% for size in site.data.devices.dp %}

@@ -76,6 +76,10 @@
     text-shadow: $full-shadow;
 }
 
+.hard-shadow {
+    text-shadow: 1px 1px 0px rgba(black, 0.6);
+}
+
 .avenir-hand {
     font-family: AvenirCondensedHand;
     font-weight: normal;
@@ -180,6 +184,10 @@
 
 .splash-background {
     @include background-image($splash-image, $responsive: true);
+}
+
+.tour-bg {
+    @include background-image($tour-background, $darken: 0.4, $responsive: true);
 }
 
 /*

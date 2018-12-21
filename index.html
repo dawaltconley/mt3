@@ -121,18 +121,18 @@ itemtype: "http://schema.org/MusicGroup"
 
 {% if has_future %}
 
-  <div class="light screen-height-min flex-col" data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Viewed upcoming shows">
+  <div class="dark tour-bg font-size-larger hard-shadow screen-height-min flex-col" data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Viewed upcoming shows">
 
     <div class="shows-wrapper padding-m-h padding-l-t half-height-min fill-flex-parent flex-col flex-justify-center">
 
-      <h2 class="text-center">Upcoming Shows</h2>
+      <h2 class="text-center">New England Tour 2019</h2>
 
-      <ul class="unlist">
+      <ul class="unlist fw-400">
         {% for show in site.data.shows %}
           {% assign show_date = show.date | date: '%s' | plus: 0 %}
           {% assign current_date = 'now' | date: '%s' | plus: 0 %}
           {% if show_date > current_date %}
-            <li class="show full-width padding-xs-v border-between border-light flex-fill-parent flex-row flex-align-center" itemprop="event" itemscope itemtype="http://schema.org/Event">
+            <li class="show full-width padding-xs-v flex-fill-parent flex-row flex-align-center" itemprop="event" itemscope itemtype="http://schema.org/Event">
               <meta itemprop="name" content="Show at {{ show.venue }}">
               <time class="show-time flex-row" datetime="{{ show.date | date_to_xmlschema }}" itemprop="startDate doorTime">
                 <span class="meta show-date">{{ show.date | date: "%b %-d" }}</span>
@@ -156,11 +156,6 @@ itemtype: "http://schema.org/MusicGroup"
         {% endfor %}
       </ul>
 
-    </div>
-
-    <div class="half-screen-height-max overflow-h">
-      {% assign spaghetti_floor = '/assets/gulp-srcset/spaghetti-floor.jpg' | prepend: site.baseurl %}
-      <img class="full-width max-width-none auto-height" src="{{ spaghetti_floor }}" srcset="{% include gulp-srcset.liquid src=spaghetti_floor width='5063px' %}" sizes="100vw" alt="">
     </div>
 
   </div>

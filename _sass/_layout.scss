@@ -458,6 +458,7 @@ body, .light {
 }
 
 .show {
+    font-size: larger;
     line-height: 1.2;
 }
 
@@ -479,8 +480,8 @@ body, .light {
 }
 
 .show-links {
-    font-size: 1.35em;
-    min-width: 1.35em;
+    font-size: 1.2em;
+    min-width: 1.2em;
 }
 
 @media screen and (max-width: $bp-laptop) {
@@ -495,7 +496,7 @@ body, .light {
 
 @media screen and (max-width: $bp-mobile) {
     .show {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 
     .venue-address {
@@ -504,6 +505,10 @@ body, .light {
 }
 
 @media screen and (max-width: 28em) {
+    .show {
+        font-size: 0.9em;
+    }
+
     .show-day {
         margin-bottom: .1em;
     }
