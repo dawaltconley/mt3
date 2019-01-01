@@ -541,62 +541,6 @@ ul.media-icon-basic, ul.media-icon-button, ul.media-icon-circle {
  * Media Queries
  */
 
-.mq-dylan {
-    @media screen and (max-aspect-ratio: 988/675) {
-        -webkit-transform: translateX(-20%);
-        transform: translateX(-20%);
-    }
-
-    @media screen and (max-aspect-ratio: 927/675) {
-        -webkit-transform: translateX(-30%);
-        transform: translateX(-30%);
-    }
-
-    @media screen and (max-aspect-ratio: 860/675) {
-        -webkit-transform: translateX(-40%);
-        transform: translateX(-40%);
-    }
-}
-
-.mq-rob {
-    @media screen and (max-aspect-ratio: 988/675) {
-        -webkit-transform: translateX(20%);
-        transform: translateX(20%);
-    }
-
-    @media screen and (max-aspect-ratio: 927/675) {
-        -webkit-transform: translateX(30%);
-        transform: translateX(30%);
-    }
-
-    @media screen and (max-aspect-ratio: 860/675) {
-        -webkit-transform: translateX(40%);
-        transform: translateX(40%);
-    }
-}
-
-@media screen and (max-aspect-ratio: 756/675) and (max-width: 550px) {
-    .mq-logo {
-        margin-top: 30px;
-        // margin-top: 9vw;
-    }
-}
-
-@media screen and (max-aspect-ratio: 756/675) {
-    .mq-dylan, .mq-rob {
-        top: 59%;
-        bottom: auto;
-    }
-
-    .mq-dylan {
-        transform: translateX(-48%);
-    }
-
-    .mq-rob {
-        transform: translateX(48%);
-    }
-}
-
 @media screen and (max-width: $bp-laptop) {
     .mq-rob-2 {
         left: 100%;

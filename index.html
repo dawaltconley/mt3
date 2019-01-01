@@ -14,13 +14,13 @@ itemtype: "http://schema.org/MusicGroup"
 
 <meta itemprop="url" content="{{ site.url | append: site.baseurl }}">
 
-<div id="splash" class="relative dark splash-bg overflow-h">
+<div id="splash" class="relative dark splash-bg">
 
   <div class="relative splash-wrapper padding-m screen-height flex-col flex-center" data-force-fullscreen>
 
     <h1 class="hidden" itemprop="name">{{ site.title }}</h1>
     <meta itemprop="logo" content="{{ site.logo.png | prepend: site.baseurl | prepend: site.url }}">
-    <img class="margin-auto-t margin-m-b mq-logo" src="{{ site.logo.svg | prepend: site.baseurl }}" alt="{{ site.title }}">
+    <img class="margin-auto-t margin-m-b" src="{{ site.logo.svg | prepend: site.baseurl }}" alt="{{ site.title }}">
 
     <ul class="margin-auto-b full-width flex-row flex-center media-icon-basic media-icon-list mq-icon-size">
       {% include all-media-icons.liquid icon_set=site.contact style="o play" list="true" microdata=true %}
