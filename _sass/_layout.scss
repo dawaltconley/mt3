@@ -76,13 +76,6 @@ body, .light {
     );
 }
 
-.fixed-bg {
-    @include theme(
-        $text-color: white,
-        $background-color: transparent
-    )
-}
-
 /*
  * Basic
  */

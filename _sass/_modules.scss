@@ -182,8 +182,12 @@
     }
 }
 
-.splash-background {
+.splash-bg {
     @include background-image($splash-image, $responsive: true);
+}
+
+.temper-tantrum-bg {
+    @include background-image($bucket-bg, $responsive: true);
 }
 
 .tour-bg {

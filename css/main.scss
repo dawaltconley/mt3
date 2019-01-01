@@ -40,7 +40,8 @@ $fa-icons:              ({% for icon in site.data.icon-types %}
 
 // Images
 
-$splash-image:          url({{ site.baseurl | append: '/assets/gulp-backgrounds/bucket-background.jpg' }});
+$splash-image:          url({{ site.baseurl | append: '/assets/gulp-backgrounds/live-show.jpg' }});
+$bucket-bg:             url({{ site.baseurl | append: '/assets/gulp-backgrounds/bucket-background.jpg' }});
 $tour-background:       url({{ site.baseurl | append: '/assets/gulp-backgrounds/icy-leaves.jpg' }});
 
 $device-dp:             ({% if jekyll.environment == 'production' or jekyll.environment == 'gulp' %}
@@ -98,7 +99,6 @@ $trans-default: .3s;
 // Breakpoints
 
 $bp: (
-    //"x-large":  1800px,
     "large":    1000px,
     "laptop":   800px,
     "mobile":   600px,
