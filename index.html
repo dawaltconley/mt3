@@ -14,7 +14,9 @@ itemtype: "http://schema.org/MusicGroup"
 
 <meta itemprop="url" content="{{ site.url | append: site.baseurl }}">
 
-<div id="splash" class="relative dark splash-bg">
+<div class="tour-bg fill-window z-neg-1"></div>
+
+<div id="splash" class="relative dark no-bg">
 
   <div class="relative splash-wrapper padding-m screen-height flex-col flex-center" data-force-fullscreen>
 
@@ -26,7 +28,7 @@ itemtype: "http://schema.org/MusicGroup"
       {% include all-media-icons.liquid icon_set=site.contact style="o play" list="true" microdata=true %}
     </ul>
 
-    <a href="#temper-tantrum" class="fa fa-chevron-down subtle-icon scroll-arrow" data-smooth-scroll data-hide-on-scroll data-analytics-category="Navigation" data-analytics-action="click" data-analytics-label="Used scroll arrow"></a>
+    <a href="#shows" class="fa fa-chevron-down subtle-icon scroll-arrow" data-smooth-scroll data-hide-on-scroll data-analytics-category="Navigation" data-analytics-action="click" data-analytics-label="Used scroll arrow"></a>
 
   </div>
 
@@ -34,7 +36,7 @@ itemtype: "http://schema.org/MusicGroup"
 
 {% if has_future %}
 
-  <div class="dark tour-bg font-size-larger hard-shadow screen-height-min flex-col" data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Viewed upcoming shows">
+  <div id="shows" class="dark no-bg padding-l-b font-size-larger hard-shadow screen-height-min flex-col" data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Viewed upcoming shows">
 
     <div class="shows-wrapper padding-m-h padding-l-t half-height-min fill-flex-parent flex-col flex-justify-center">
 
