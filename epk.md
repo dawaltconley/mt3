@@ -40,11 +40,7 @@ Just the right balance of bark and bite. The project started with the release of
 
 ## Photos
 
-<div class="flex-row flex-even">
-{% for photo in site.press_photos %}
-[![]({{ photo | prepend: site.baseurl }})]({{ photo | prepend: site.baseurl }})
-{% endfor %}
-</div>
+{% include photo-stream.html photos=site.press_photos %}
 
 ## Videos
 

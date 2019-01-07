@@ -1,0 +1,9 @@
+{::options parse_block_html="false" /}
+
+<div class="margin-m-b font-0">
+  {% for photo in include.photos %}
+    <a class="block photo-stream margin-s-b" href="{{ photo | prepend: site.baseurl }}">
+      <img class="object-fit-cover" src="{{ photo | prepend: site.baseurl }}" alt="">
+    </a>
+  {% endfor %}
+</div>
