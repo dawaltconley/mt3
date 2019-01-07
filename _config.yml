@@ -10,7 +10,7 @@ keywords:
   - Brooklyn
 logo:
   svg:
-    black: "/assets/logo.svg"
+    black: "/assets/logo-black.svg"
     white: "/assets/logo-white.svg"
   png: "/assets/logo.png"
 og_image: "/assets/temper-tantrum-og-2.jpg"
