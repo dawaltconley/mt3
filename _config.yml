@@ -12,6 +12,9 @@ logo:
   svg: "/assets/logo.svg"
   png: "/assets/logo.png"
 og_image: "/assets/temper-tantrum-og-2.jpg"
+press_photos:
+  - "/assets/pro-pic-2.jpg"
+  - "/assets/Safety-First-2.jpg"
 baseurl: ""
 url: "https://www.moretongues.com"
 google_analytics: "UA-101639062-1"

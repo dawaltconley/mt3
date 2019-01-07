@@ -38,6 +38,14 @@ Just the right balance of bark and bite. The project started with the release of
 
 {% include shows.html %}
 
+## Photos
+
+<div class="flex-row flex-even">
+{% for photo in site.press_photos %}
+![]({{ photo | prepend: site.baseurl }})
+{% endfor %}
+</div>
+
 ## Videos
 
 <div class="aspect-16-9 margin-m-b">
