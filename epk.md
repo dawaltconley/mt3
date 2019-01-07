@@ -7,7 +7,7 @@ layout: default
 <div class="margin-auto-h padding-l-v padding-m-h text-wrapper">
 
 ![{{ site.title }}]({{ site.logo.png | prepend: site.baseurl }})
-{: class="half-width margin-auto-h" }
+{: class="logo-width-epk margin-auto-h" }
 
 # Press Kit
 {: class="text-center" }
