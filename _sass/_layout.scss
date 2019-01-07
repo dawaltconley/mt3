@@ -454,7 +454,7 @@ body, .light {
     }
 }
 
-.show {
+.shows-large-font .show {
     font-size: larger;
     line-height: 1.2;
 }
@@ -492,7 +492,7 @@ body, .light {
 }
 
 @media screen and (max-width: $bp-mobile) {
-    .show {
+    .shows-large-font .show {
         font-size: 1em;
     }
 
@@ -502,7 +502,7 @@ body, .light {
 }
 
 @media screen and (max-width: 28em) {
-    .show {
+    .shows-large-font .show {
         font-size: 0.9em;
     }
 
