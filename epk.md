@@ -9,7 +9,7 @@ layout: default
 [![{{ site.title }}]({{ site.logo.svg.black | prepend: site.baseurl }})]({{ site.baseurl }}/)
 {: class="logo-width-epk margin-auto-h" }
 
-# Press Kit
+# More Tongues Than Teeth<span class="hidden"> Press Kit</span>
 {: class="text-center" }
 
 <ul class="full-width flex-row flex-center media-icon-basic media-icon-list font-size-large">
