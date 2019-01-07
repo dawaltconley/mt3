@@ -48,7 +48,7 @@ Just the right balance of bark and bite. The project started with the release of
 
 ## Videos
 
-<div class="aspect-16-9 margin-m-b">
+<div class="aspect-16-9 expand-children margin-m-b">
 <iframe itemprop="url" src="https://www.youtube.com/embed/4Ihh8SwPg80" allowfullscreen data-analytics-category="Video" data-analytics-action="click" data-analytics-label="Watched I Wanna Be a Machine"></iframe>
 </div>
 
