@@ -6,7 +6,7 @@ layout: default
 
 <div class="margin-auto-h padding-l-v padding-m-h text-wrapper">
 
-![{{ site.title }}]({{ site.logo.svg.black | prepend: site.baseurl }})
+[![{{ site.title }}]({{ site.logo.svg.black | prepend: site.baseurl }})]({{ site.baseurl }}/)
 {: class="logo-width-epk margin-auto-h" }
 
 # Press Kit
