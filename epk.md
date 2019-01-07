@@ -40,15 +40,11 @@ Just the right balance of bark and bite. The project started with the release of
 
 ## Photos
 
-<div class="flex-row flex-even">
-{% for photo in site.press_photos %}
-[![]({{ photo | prepend: site.baseurl }})]({{ photo | prepend: site.baseurl }})
-{% endfor %}
-</div>
+{% include photo-stream.html photos=site.press_photos %}
 
 ## Videos
 
-<div class="aspect-16-9 margin-m-b">
+<div class="aspect-16-9 expand-children margin-m-b">
 <iframe itemprop="url" src="https://www.youtube.com/embed/4Ihh8SwPg80" allowfullscreen data-analytics-category="Video" data-analytics-action="click" data-analytics-label="Watched I Wanna Be a Machine"></iframe>
 </div>
 

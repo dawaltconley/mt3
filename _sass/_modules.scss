@@ -169,17 +169,18 @@
  * Images
  */
 
-.bg-img {
-    @include background-image;
+img.object-fit-cover {
+    object-fit: cover;
+    font-family: 'object-fit: cover;'
 }
 
-.object-fit-cover {
-    @extend .relative, .bg-img;
+img.object-fit-contain {
+    object-fit: contain;
+    font-family: 'object-fit: contain;'
+}
 
-    & > img {
-        @extend .fill-parent;
-        object-fit: cover;
-    }
+.bg-img {
+    @include background-image;
 }
 
 .splash-bg {
