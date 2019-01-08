@@ -7,7 +7,7 @@ itemtype: "http://schema.org/MusicGroup"
 
 {::options parse_block_html="true" /}
 
-<article class="margin-auto-h padding-l-v padding-m-h text-wrapper">
+<article class="margin-auto-h padding-l-v padding-m-h text-wrapper" data-analytics-category="Navigation" data-analytics-action="view" data-analytics-label="Scrolled entire EPK">
 
 <header>
 <meta itemprop="logo" content="{{ site.logo.png | prepend: site.baseurl | prepend: site.url }}">
