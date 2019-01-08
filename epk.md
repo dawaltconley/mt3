@@ -4,7 +4,7 @@ layout: default
 
 {::options parse_block_html="true" /}
 
-<div class="margin-auto-h padding-l-v padding-m-h text-wrapper">
+<article class="margin-auto-h padding-l-v padding-m-h text-wrapper">
 
 [![{{ site.title }}]({{ site.logo.svg.black | prepend: site.baseurl }})]({{ site.baseurl }}/)
 {: class="logo-width-epk margin-auto-h" }
@@ -15,6 +15,8 @@ layout: default
 <ul class="full-width flex-row flex-center media-icon-basic media-icon-list font-size-large">
 {% include all-media-icons.liquid icon_set=site.contact style="o play" list="true" microdata=true %}
 </ul>
+
+
 
 ## Artist Information
 
@@ -60,4 +62,6 @@ Click to expand.
 
 Email us at [{{ site.contact.email }}](mailto:{{ site.contact.email }})
 
-</div>
+
+
+</article>

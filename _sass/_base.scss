@@ -52,6 +52,12 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit;
 }
 
+@media screen and (min-width: map-get($bp, mobile) + 1px) {
+    article p {
+        margin-left: $spacing-unit / 2;
+    }
+}
+
 /**
  * Media
  */
