@@ -38,7 +38,7 @@ Just the right balance of bark and bite. The project started with the release of
 
 {% include shows.html %}
 
-## Photos
+## Photos & Artwork
 
 Click to expand.
 
@@ -56,7 +56,7 @@ Click to expand.
 <a href="http://moretongues.bandcamp.com/album/temper-tantrum">Temper Tantrum by More Tongues Than Teeth</a>
 </iframe>
 
-## Contact/Booking
+## Contact & Booking
 
 [moretonguesthanteeth@gmail.com](mailto:moretonguesthanteeth@gmail.com)
 
