@@ -52,7 +52,7 @@ Click to expand.
 
 ## Audio
 
-<iframe class="full-width margin-m-b mq-bandcamp-height" src="https://bandcamp.com/EmbeddedPlayer/album=2871722682/size=large/bgcol=ffffff/linkcol=0687f5/artwork=none/transparent=true/" seamless itemprop="audio" data-analytics-category="Audio" data-analytics-action="click" data-analytics-label="Listened to Temper Tantrum">
+<iframe class="full-width margin-m-b mq-bandcamp-height" src="https://bandcamp.com/EmbeddedPlayer/album=2871722682/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless itemprop="audio" data-analytics-category="Audio" data-analytics-action="click" data-analytics-label="Listened to Temper Tantrum">
 <a href="http://moretongues.bandcamp.com/album/temper-tantrum">Temper Tantrum by More Tongues Than Teeth</a>
 </iframe>
 
