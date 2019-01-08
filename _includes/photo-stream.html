@@ -2,7 +2,7 @@
 
 <div class="margin-m-b font-0">
   {% for photo in include.photos %}
-    <a class="block photo-stream margin-s-b" href="{{ photo | prepend: site.baseurl }}">
+    <a class="block photo-stream margin-s-b" href="{{ photo | prepend: site.baseurl }}" target="_blank">
       <img class="object-fit-cover" src="{{ photo | prepend: site.baseurl }}" alt="">
     </a>
   {% endfor %}

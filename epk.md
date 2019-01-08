@@ -40,6 +40,8 @@ Just the right balance of bark and bite. The project started with the release of
 
 ## Photos
 
+Click to expand.
+
 {% include photo-stream.html photos=site.press_photos %}
 
 ## Videos
