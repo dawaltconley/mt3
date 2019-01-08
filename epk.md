@@ -58,6 +58,6 @@ Click to expand.
 
 ## Contact & Booking
 
-[moretonguesthanteeth@gmail.com](mailto:moretonguesthanteeth@gmail.com)
+Email us at [{{ site.contact.email }}](mailto:{{ site.contact.email }})
 
 </div>
