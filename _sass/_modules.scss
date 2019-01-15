@@ -580,6 +580,12 @@ ul.media-icon-basic, ul.media-icon-button, ul.media-icon-circle {
     }
 }
 
+@media screen and (max-width: map-get($bp, mobile)) {
+    .mq-mobile-min-height-0 {
+        min-height: 0;
+    }
+}
+
 /*
  * Javascript
  */
