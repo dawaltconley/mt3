@@ -54,10 +54,16 @@ Click to expand.
 ## Videos
 
 <div class="aspect-16-9 expand-children margin-m-b">
+<meta itemprop="name" content="Safety First">
+<meta itemprop="thumbnailUrl" content="https://i.ytimg.com/vi_webp/qYNsF3leK58/maxresdefault.webp">
+<meta itemprop="uploadDate" content="2019-01-09">
 <iframe itemprop="url" src="https://www.youtube.com/embed/qYNsF3leK58" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-analytics-category="Video" data-analytics-action="click" data-analytics-label="Watched Safety First"></iframe>
 </div>
 
 <div class="aspect-16-9 expand-children margin-m-b">
+<meta itemprop="name" content="I Wanna Be A Machine Music Video">
+<meta itemprop="thumbnailUrl" content="https://i.ytimg.com/vi_webp/4Ihh8SwPg80/maxresdefault.webp">
+<meta itemprop="uploadDate" content="2017-06-06">
 <iframe itemprop="url" src="https://www.youtube.com/embed/4Ihh8SwPg80" allowfullscreen data-analytics-category="Video" data-analytics-action="click" data-analytics-label="Watched I Wanna Be a Machine"></iframe>
 </div>
 
