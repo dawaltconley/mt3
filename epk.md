@@ -54,6 +54,10 @@ Click to expand.
 ## Videos
 
 <div class="aspect-16-9 expand-children margin-m-b">
+<iframe itemprop="url" src="https://www.youtube.com/embed/qYNsF3leK58" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen data-analytics-category="Video" data-analytics-action="click" data-analytics-label="Watched Safety First"></iframe>
+</div>
+
+<div class="aspect-16-9 expand-children margin-m-b">
 <iframe itemprop="url" src="https://www.youtube.com/embed/4Ihh8SwPg80" allowfullscreen data-analytics-category="Video" data-analytics-action="click" data-analytics-label="Watched I Wanna Be a Machine"></iframe>
 </div>
 
