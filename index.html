@@ -22,7 +22,7 @@ itemtype: "http://schema.org/MusicGroup"
 
     <h1 class="hidden" itemprop="name">{{ site.title }}</h1>
     <meta itemprop="logo" content="{{ site.logo.png | prepend: site.baseurl | prepend: site.url }}">
-    <img class="margin-auto-t margin-m-b" src="{{ site.logo.svg.white | prepend: site.baseurl }}" alt="{{ site.title }}">
+    <img class="full-width margin-auto-t margin-m-b" src="{{ site.logo.svg.white | prepend: site.baseurl }}" alt="{{ site.title }}">
 
     <ul class="margin-auto-b full-width flex-row flex-center media-icon-basic media-icon-list mq-icon-size">
       {% include all-media-icons.liquid icon_set=site.contact style="o play" list="true" microdata=true %}
