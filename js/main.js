@@ -198,6 +198,8 @@
         this.slider = document.createElement("input");
         this.slider.type = "range";
         this.slider.value = "50";
+        this.checkbox = document.createElement("input");
+        this.checkbox.type = "checkbox";
 
         this.images = JSON.parse(element.getAttribute("data-background-images"));
         this.images.unshift(initialImage);
@@ -212,6 +214,7 @@
 
         this.controls.appendChild(this.menu);
         this.controls.appendChild(this.slider);
+        this.controls.appendChild(this.checkbox);
         menuContainer.appendChild(this.controls);
     }
 
@@ -221,13 +224,19 @@
         if (trigger == "menu" && image["slider"]) { this.slider.value = image["slider"]; }
         var lightness = ((Number(this.slider.value) - 50) / 50).toString();
 
+        if (this.checkbox.checked) {
+            this.element.style.filter = "grayscale(100%)";
+        } else {
+            this.element.style.filter = "grayscale(0%)";
+        }
+
         if (lightness >= 0) {
             this.element.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, " + lightness + "), rgba(255, 255, 255, " + lightness + ")), url('" + imagePath + "')";
-            console.log("image: %s\nlightness: %s\nslider: %s", imagePath, lightness, Number(this.slider.value));
+            console.log("image: %s\nlightness: %s\nslider: %s\ngrayscale: %s", imagePath, lightness, Number(this.slider.value), this.checkbox.checked);
         } else {
             var darkness = Math.abs(lightness);
             this.element.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, " + darkness + "), rgba(0, 0, 0, " + darkness + ")), url('" + imagePath + "')";
-            console.log("image: %s\ndarkness: %s\nslider: %s", imagePath, darkness, Number(this.slider.value));
+            console.log("image: %s\ndarkness: %s\nslider: %s\ngrayscale: %s", imagePath, darkness, Number(this.slider.value), this.checkbox.checked);
         }
 
         image["size"] ? this.element.style.backgroundSize = image["size"] : this.element.style.backgroundSize = null;
@@ -238,6 +247,7 @@
         obj.element.removeAttribute("data-background-images");
         obj.menu.onchange = obj.setBg.bind(obj, "menu");
         obj.slider.onchange = obj.setBg.bind(obj);
+        obj.checkbox.onchange = obj.setBg.bind(obj);
         obj.slider.ondblclick = function () {
             obj.slider.value = 50;
             obj.setBg();

@@ -191,8 +191,8 @@ img.object-fit-contain {
     @include background-image($bucket-bg, $responsive: true);
 }
 
-.tour-bg {
-    @include background-image($tour-background, $darken: 0.4, $responsive: true);
+.fixed-bg {
+    @include background-image($fixed-background, $darken: 0.6, $responsive: true);
 }
 
 /*

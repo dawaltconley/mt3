@@ -42,7 +42,7 @@ $fa-icons:              ({% for icon in site.data.icon-types %}
 
 $splash-image:          url({{ site.baseurl | append: '/assets/gulp-backgrounds/live-show.jpg' }});
 $bucket-bg:             url({{ site.baseurl | append: '/assets/gulp-backgrounds/bucket-background.jpg' }});
-$tour-background:       url({{ site.baseurl | append: '/assets/gulp-backgrounds/icy-leaves.jpg' }});
+$fixed-background:      url({{ site.baseurl | append: '/assets/owl/blur-02.jpg' }});
 
 $device-dp:             ({% if jekyll.environment == 'production' or jekyll.environment == 'gulp' %}
                             {% for size in site.data.devices.dp %}
