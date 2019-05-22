@@ -323,6 +323,18 @@ body, .light {
     transform-style: preserve-3d;
 }
 
+.click-through {
+    pointer-events: none;
+
+    & > * {
+        pointer-events: auto;
+    }
+}
+
+.no-click, .no-click > * {
+    pointer-events: none;
+}
+
 /*
  * Tables
  */
