@@ -183,16 +183,13 @@ img.object-fit-contain {
     @include background-image;
 }
 
-.splash-bg {
-    @include background-image($splash-image, $responsive: true);
+.fixed-bg {
+    @include background-image($fixed-image, $darken: 0.3, $responsive: true);
+    filter: grayscale(100%);
 }
 
 .temper-tantrum-bg {
     @include background-image($bucket-bg, $responsive: true);
-}
-
-.tour-bg {
-    @include background-image($tour-background, $darken: 0.4, $responsive: true);
 }
 
 /*

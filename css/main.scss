@@ -40,7 +40,7 @@ $fa-icons:              ({% for icon in site.data.icon-types %}
 
 // Images
 
-$splash-image:          url({{ site.baseurl | append: '/assets/gulp-backgrounds/live-show.jpg' }});
+$fixed-image:           url({{ site.baseurl | append: '/assets/gulp-backgrounds/side-06-bw.jpg' }});
 $bucket-bg:             url({{ site.baseurl | append: '/assets/gulp-backgrounds/bucket-background.jpg' }});
 $tour-background:       url({{ site.baseurl | append: '/assets/gulp-backgrounds/icy-leaves.jpg' }});
 
