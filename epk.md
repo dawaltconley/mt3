@@ -32,7 +32,7 @@ Sounds Like: Slow Mass, Dinosaur Jr, mewithoutyou
 
 ## Bio
 
-Just the right balance of bark and bite. The project started with the release of Temper Tantrum, written together by Robert and Dylan during their time at Wesleyan University. Since moving to New York, the band has added Aidan and Henry. Musically, they take inspiration from the alternative bands of the 90s and 00s — but not enough to consider the band simply nostalgic; they’ve incorporated elements of punk, indie, folk, and post-hardcore to create a genre mash of indie trash. They write songs about malcontent in society and themselves and geek out whenever they can do something in an alternative time signature.
+Something to bark and bite about. The project started with the release of Temper Tantrum, written together by Robert and Dylan during their time at Wesleyan University. Since moving to New York, the band has added Aidan and Henry and developed a fuller, heavier sound. They take inspiration from the alternative music of the 90s and 00s, incorporating elements of punk, indie, folk, and post-hardcore into a genre mash of indie trash. They write songs about social and personal unrest that flirt with odd forms and time signatures, without ever abandoning the singer-songwriter roots of Temper Tantrum.
 
 ## Band Members
 
